@@ -8,3 +8,7 @@ for month in months:
     print(month)
     sales_table = pd.read_excel(fr'C:\Users\jonat\Documents\Meus Projetos\Python\Projeto 4 Envio SMS Twilio\Envio-SMS-Twilio\Relatório de Vendas\{month}.xlsx')
     print(sales_table)
+    if (sales_table['Vendas'] > 55000).any():
+        seller = sales_table.loc[(sales_table['Vendas'] > 55000), 'Vendedor'].values[0]
+        sale = sales_table.loc[(sales_table['Vendas'] > 55000), 'Vendas'].values[0]
+        print(f'No mês de {month}, o vendedor {seller} bateu a meta com {sale} vendas!')
