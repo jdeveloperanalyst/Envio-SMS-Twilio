@@ -1,9 +1,10 @@
 import pandas as pd
 from twilio.rest import Client
+from Credenciais import secret
 
 # Criando variáveis no qual se refere ao SID(usuário) e um token(autenticação) criado no site twilio.com/console para que seja possível uma conexão ao twilio para envio da menssagem
-account_sid = ''
-auth_token = ''
+account_sid = secret['sid']
+auth_token = secret['token']
 client = Client(account_sid, auth_token)
 
 
@@ -19,7 +20,7 @@ for month in months:
         print(f'No mês de {month}, o vendedor {seller} bateu a meta com {sale} vendas!')
         # Envio da mensagem
         message = client.messages.create(
-            to="",
-            from_="",
+            to=secret['my_cellphone'],
+            from_=secret['twilio_phone'],
             body=f'No mês de {month}, o vendedor {seller} bateu a meta com {sale} vendas!')
         print(message.sid)
