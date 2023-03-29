@@ -7,7 +7,6 @@ account_sid = secret['sid']
 auth_token = secret['token']
 client = Client(account_sid, auth_token)
 
-
 # Criando uma lista com o nome dos primeiros 6 meses do ano.
 months = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho']
 
