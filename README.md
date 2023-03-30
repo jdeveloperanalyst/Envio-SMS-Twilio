@@ -2,7 +2,7 @@
  
 <br>
 <h3 align="center">
-Código 100% Funciona
+Código 100% Funcional
 </h3>
 
 <br>
