@@ -7,7 +7,7 @@ Este projeto tem como objetivo automatizar um fluxo no qual é analisado os func
 
 ## Sobre o Projeto
 
-Para este projeto foi utilizado 6 base de dados que basicamente são <kbd>arquivos Excel</kbd> de cada mês referente ao primeiro semestre do ano, onde contém informações como <kbd>nome do vendedor</kbd> e também o <kbd>valor das vendas</kbd> de cada mês. Sendo assim, utilizando os recursos que o Python nos fornece, este script será responsável em ler/analisar essas 6 base de dados, fazendo com que seja possível identificar os funcionários que bateram a meta e a partir da biblioteca <kbd>Twilio</kbd> será possível realizar o envio de um SMS com essas informações para que os responsáveis pelo bom trabalho sejam bonificados. Tudo isso de forma totalmente automática.
+Para este projeto foi utilizado 6 bases de dados que basicamente são <kbd>arquivos Excel</kbd> de cada mês referente ao primeiro semestre do ano, onde contém informações como <kbd>nome do vendedor</kbd> e também o <kbd>valor das vendas</kbd> de cada mês. Sendo assim, utilizando os recursos que o Python nos fornece, este script será responsável em ler/analisar essas 6 bases de dados, fazendo com que seja possível identificar os funcionários que bateram a meta e a partir da biblioteca <kbd>Twilio</kbd> será possível realizar o envio de um SMS com essas informações para que os responsáveis pelo bom trabalho sejam bonificados. Tudo isso de forma totalmente automática.
 
 ## Twilio
 
