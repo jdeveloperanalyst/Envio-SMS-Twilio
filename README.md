@@ -2,7 +2,7 @@
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-05122A?style=flat&logo=linkedin)](https://www.linkedin.com/in/jonatas-silva-dev-6a6f6e/)
 # Envio de SMS Biblioteca Twilio
 
-Este projeto tem como objetivo automatizar um fluxo no qual é analisado os funcionáirios que bateram a meta de vendas em mais de R$55.000 reais em uma determinada empresa, no qual será feito o envio de um SMS para um destinatário pré-definido (sendo ele um gestor ou uma pessoa com cargo de liderança).
+Este projeto tem como objetivo automatizar um fluxo no qual é analisado os funcionáirios que bateram a meta de vendas em mais de R$55.000 reais em uma determinada empresa, no qual será feito o envio de um SMS para um destinatário predefinido (sendo ele um gestor ou uma pessoa com cargo de liderança).
 <br>
 
 
