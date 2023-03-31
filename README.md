@@ -15,7 +15,7 @@ O <kbd>Twilio</kbd> é uma biblioteca auxiliar do Python que facilita a interac�
 
 <br>
 <h3 align="center">
-Código 100% Funciona
+Código 100% Funcional
 </h3>
 
 <br>
