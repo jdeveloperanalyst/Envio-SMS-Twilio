@@ -17,9 +17,9 @@ for month in months:
         seller = sales_table.loc[(sales_table['Vendas'] > 55000), 'Vendedor'].values[0]
         sale = sales_table.loc[(sales_table['Vendas'] > 55000), 'Vendas'].values[0]
         print(f'No mês de {month}, o vendedor {seller} bateu a meta com {sale} vendas!')
-        # Envio da mensagem
-        message = client.messages.create(
+        # Envio do SMS
+        sms = client.messages.create(
             to=secret['my_cellphone'],
             from_=secret['twilio_phone'],
             body=f'No mês de {month}, o vendedor {seller} bateu a meta com {sale} vendas!')
-        print(message.sid)
+        print(sms.sid)
