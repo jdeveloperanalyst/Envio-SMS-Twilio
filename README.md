@@ -2,16 +2,18 @@
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-05122A?style=flat&logo=linkedin)](https://www.linkedin.com/in/jonatas-silva-dev-6a6f6e/)
 # Envio de SMS Biblioteca Twilio
 
-Este projeto tem como objetivo automatizar um fluxo no qual é analisado os funcionários que bateram a meta de vendas em mais de R$55.000 reais em uma determinada empresa, no qual será feito o envio de um SMS para um destinatário predefinido (sendo ele um gestor ou uma pessoa com cargo de liderança) e o funcionário que bater a meta terá uma bonificação..
+Este projeto tem como objetivo automatizar um fluxo utilizando a linguagem de programação <kbd>Python</kbd> no qual é analisado os funcionários que bateram a meta de vendas em mais de R$55.000 reais em uma determinada empresa, onde será feito o envio de um SMS para um destinatário predefinido (sendo ele um gestor ou uma pessoa com cargo de liderança) e o funcionário que bater a meta terá uma bonificação..
 <br>
 
 ## Sobre o Projeto
 
-Para este projeto foi utilizado 6 bases de dados que basicamente são <kbd>arquivos Excel</kbd> de cada mês referente ao primeiro semestre do ano, onde contém informações como <kbd>nome do vendedor</kbd> e também o <kbd>valor das vendas</kbd> de cada mês. Sendo assim, utilizando os recursos que o Python nos fornece, este script será responsável em ler/analisar essas 6 bases de dados, fazendo com que seja possível identificar os funcionários que bateram a meta e a partir da biblioteca <kbd>Twilio</kbd> será possível realizar o envio de um SMS com essas informações para que os responsáveis pelo bom trabalho sejam bonificados. Tudo isso de forma totalmente automática.
+Para este projeto foi utilizado 6 bases de dados que basicamente são <kbd>arquivos Excel</kbd> de cada mês referente ao primeiro semestre do ano, onde contém informações como <kbd>nome do vendedor</kbd> e também o <kbd>valor das vendas</kbd> de cada mês. Sendo assim, utilizando os recursos que o Python nos fornece, este script será responsável em ler/analisar essas 6 bases de dados, fazendo com que seja possível identificar os funcionários que bateram a meta e a partir da biblioteca <kbd>Twilio</kbd> realizar o envio de um SMS com essas informações para que os responsáveis pelo bom trabalho sejam bonificados. Tudo isso de forma totalmente automática.
 
 ## Twilio
 
-O <kbd>Twilio</kbd> é uma biblioteca auxiliar do Python que facilita a interação com a <kbd>API Twilio</kbd> com diversas funcionalidades. Vale destacar dois pontos importantes, no qual se refere à <kbd>realização de um cadastro</kbd> na plataforma Twilio e ao <kbd>uso de credênciais</kbd> que são geradas na aplicação web após o cadastro. Será mostrado também como atriubui essas credênciais em váriaveis, tornando-a discreta no código e no GitHub.
+O <kbd>Twilio</kbd> é uma biblioteca auxiliar do Python que facilita a interação com a <kbd>API Twilio</kbd> com diversas funcionalidades. Vale destacar dois pontos importantes, no qual se refere à <kbd>realização de um cadastro</kbd> na plataforma Twilio e ao <kbd>uso de credênciais</kbd> que são geradas na aplicação web após o cadastro. Será mostrado também como atriubui essas credênciais em váriaveis, impedindo que terceiros tenha acesso as mesmas no código.
+
+⚠️ _Atenção: A partir do momento que essas credênciais ficam explicitas em repositórios na internet, por questões de segurança ao fazer o login na aplicação web Twilio com seu usuário e senha é solicitado a troca dessas credênciais. Sendo assim, para melhor segurança nos dados é necessário atribui-las em váriáveis e se necessário criptografa-las para o uso devido._
 
 1. Cadastro
    1. Primeiramente é feito o cadastro na plataforma Twilio (https://www.twilio.com/try-twilio) inserindo os dados no qual é solicitado conforme imagem abaixo:
@@ -25,7 +27,34 @@ O <kbd>Twilio</kbd> é uma biblioteca auxiliar do Python que facilita a interac�
       ![image](https://user-images.githubusercontent.com/112918533/230239805-5004088e-9674-4ac3-b130-98562c2e8cd1.png)
    
       _Para este caso, meu número ja foi criado. Entretando, após realizar o cadastro terá um botão com a seguinte escrita: <kbd>Get a trial phone number</kbd> que estará neste <kbd>Step 1</kbd> para que seja criado um número de telefone teste_.
+      
+   3. Em seguida, com o cadastro realizado e com o número de telefone virutal criado, será possível ver na tela inicial as credênciais para autenticação criadas com sucesso, sendo eles: <kbd>Account SID</kbd>, <kbd>Auth Token</kbd> e o <kbd>My Twilio phone number</kbd> conforme imagem abaixo:
 
+      ![image](https://user-images.githubusercontent.com/112918533/230244611-5fe59d3b-e403-4099-96f0-a4dbbc1305b2.png)
+
+2. Credênciais
+   1. É muito importante ressaltar o <kbd>uso devido</kbd> das credênciais no código. Sendo assim, com o objetivo de não deixar essas credênciais explicitas no arquivo principal, dentro do projeto criei um novo arquivo Python no PyCharm chamado <kbd>Credenciais.py</kbd> e neste arquivo criei uma váriável chamada <kbd>secret</kbd> que recebe um dicionário onde contém chaves que recebem essas credênciais, conforme mostrado abaixo: 
+   
+      Credenciais.py
+      ```
+      secret = {'sid': 'abcdefghijklmnopqrstuvwxyz',
+                'token': 'aaaa111bbbb2222cccc',
+                'my_cellphone': '+1111111111111',
+                'twilio_phone': '+22222222222'}
+       ```
+    
+    2. Com isto, no arquivo principal no qual intitulei como <kbd>Envio_SMS_Twilio.py</kbd> importei a variável <kbd>secret</kbd> a partir do arquivo <kbd>Credenciais.py</kbd> para acessar os dados e conseguir autenticar a conexão do twilio para envio do SMS utilizando o script Python criado. Confira abaixo como é importado a variável que recebe um dicioário a partir do arquivo <kbd>Credenciais.py</kbd> que foi criado:
+   
+       Envio_SMS_Twilio.py
+       ```
+       from twilio.rest import Client
+       from Credenciais import secret
+       
+       account_sid = secret['sid']
+       auth_token = secret['token']
+       client = Client(account_sid, auth_token)
+       ```
+       _Com isto, é feito a conexão com Twilio para o envio do SMS._
 <br>
 <h3 align="center">
 Código 100% Funcional
