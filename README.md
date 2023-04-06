@@ -11,7 +11,20 @@ Para este projeto foi utilizado 6 bases de dados que basicamente são <kbd>arqui
 
 ## Twilio
 
-O <kbd>Twilio</kbd> é uma biblioteca auxiliar do Python que facilita a interação com a <kbd>API Twilio</kbd> com diversas funcionalidades. E Antes de mostrar a estrutura do código vale <kbd>destacar</kbd> alguns pontos importantes sobre a biblioteca no qual se refere ao cadastramento e ao uso de credênciais da aplicação web. Será mostrado também como atriubui essas credênciais em váriaveis, tornando-a discreta no código e no GitHub. <kbd>Confira abaixo</kbd> uma breve explicação sobre este processo:
+O <kbd>Twilio</kbd> é uma biblioteca auxiliar do Python que facilita a interação com a <kbd>API Twilio</kbd> com diversas funcionalidades. Vale destacar dois pontos importantes, no qual se refere à <kbd>realização de um cadastro</kbd> na plataforma Twilio e ao <kbd>uso de credênciais</kbd> que são geradas na aplicação web após o cadastro. Será mostrado também como atriubui essas credênciais em váriaveis, tornando-a discreta no código e no GitHub.
+
+1. Cadastro
+   1. Primeiramente é feito o cadastro na plataforma Twilio (https://www.twilio.com/try-twilio) inserindo os dados no qual é solicitado conforme imagem abaixo:
+
+   ⚠️ _Atenção: Fazer o cadastro **"sem a necessidade de hospedagem de código no Twilio"**, essa funcionalidade será perguntada ao usuário quando o mesmo estiver realizando o cadastro._ 
+   
+      ![image](https://user-images.githubusercontent.com/112918533/230236529-5376f5c1-fa3c-467f-8eba-472e0f440d1e.png)
+      
+   2. Após o simples cadastro, será possível verificar na tela inicial as credênciais responsáveis pela autenticação no cliente <kbd>(Twilio)</kbd>. Porém antes de utiliza-los no script em questão para enviar ou receber um SMS com Twilio, você precisará de um número de telefone virtual da Twilio. Um número de telefone virtual é um número de telefone padrão que não está bloqueado para um telefone específico. Ele pode rotear uma chamada de voz ou mensagem de texto para qualquer fluxo de trabalho de telefone ou aplicativo. Além disso, você precisará do SID da conta Twilio e do token Auth para conectar o Twilio ao seu aplicativo. Ainda na tela inicial é possível criar um número de telefone virtual seguindo o <kbd>Step 1</kbd> conforme mostra a imagem abaixo:
+
+      ![image](https://user-images.githubusercontent.com/112918533/230239805-5004088e-9674-4ac3-b130-98562c2e8cd1.png)
+   
+   _Para este caso, meu número ja foi criado. Entretando, após realizar o cadastro terá um botão com a seguinte escrita: <kbd>Get a trial phone number</kbd> que estará neste <kbd>Step 1</kbd> para que seja criado um número de telefone teste_.
 
 <br>
 <h3 align="center">
