@@ -43,7 +43,7 @@ O <kbd>Twilio</kbd> é uma biblioteca auxiliar do Python que facilita a interac�
                 'twilio_phone': '+22222222222'}
        ```
     
-    2. Com isto, no arquivo principal no qual intitulei como <kbd>Envio_SMS_Twilio.py</kbd> importei a variável <kbd>secret</kbd> a partir do arquivo <kbd>Credenciais.py</kbd> para acessar os dados e conseguir autenticar a conexão do twilio para envio do SMS utilizando o script Python criado. Confira abaixo como é importado a variável que recebe um dicioário a partir do arquivo <kbd>Credenciais.py</kbd> que foi criado:
+    2. Com isto, no arquivo principal no qual intitulei como <kbd>Envio_SMS_Twilio.py</kbd> importei a variável <kbd>secret</kbd> a partir do arquivo <kbd>Credenciais.py</kbd> para acessar os dados e conseguir autenticar a conexão do twilio para envio do SMS utilizando o script Python criado. Confira abaixo como é importado a variável que recebe um dicionário a partir do arquivo <kbd>Credenciais.py</kbd> que foi criado:
    
        Envio_SMS_Twilio.py
        ```
