@@ -13,8 +13,6 @@ Para este projeto foi utilizado 6 bases de dados que basicamente são <kbd>arqui
 
 O <kbd>Twilio</kbd> é uma biblioteca auxiliar do Python que facilita a interação com a <kbd>API Twilio</kbd> com diversas funcionalidades. Vale destacar dois pontos importantes, no qual se refere à <kbd>realização de um cadastro</kbd> na plataforma Twilio e ao <kbd>uso de credênciais</kbd> que são geradas na aplicação web após o cadastro. Será mostrado também como atriubui essas credênciais em váriaveis, impedindo que terceiros tenha acesso as mesmas no código.
 
-⚠️ _Atenção: A partir do momento que essas credênciais ficam explicitas em repositórios na internet, por questões de segurança ao fazer o login na aplicação web Twilio com seu usuário e senha é solicitado a troca dessas credênciais. Sendo assim, para melhor segurança nos dados é necessário atribui-las em váriáveis e se necessário criptografa-las para o uso devido._
-
 1. Cadastro
    1. Primeiramente é feito o cadastro na plataforma Twilio (https://www.twilio.com/try-twilio) inserindo os dados no qual é solicitado conforme imagem abaixo:
 
@@ -42,6 +40,7 @@ O <kbd>Twilio</kbd> é uma biblioteca auxiliar do Python que facilita a interac�
                 'my_cellphone': '+1111111111111',
                 'twilio_phone': '+22222222222'}
        ```
+       ⚠️ _Atenção: A partir do momento que essas credênciais ficam explicitas em repositórios na internet, por questões de segurança ao fazer o login na aplicação web Twilio com seu usuário e senha é solicitado a troca dessas credênciais. Sendo assim, para melhor segurança nos dados é necessário atribui-las em váriáveis e se necessário criptografa-las para o uso devido. Além disso, o arquivo <kbd>Credenciais.py</kbd> foi add ao .gitignore para que não fosse expostos os dados utilizados para este projeto._
     
     2. Com isto, no arquivo principal no qual intitulei como <kbd>Envio_SMS_Twilio.py</kbd> importei a variável <kbd>secret</kbd> a partir do arquivo <kbd>Credenciais.py</kbd> para acessar os dados e conseguir autenticar a conexão do twilio para envio do SMS utilizando o script Python criado. Confira abaixo como é importado a variável que recebe um dicionário a partir do arquivo <kbd>Credenciais.py</kbd> que foi criado:
    
