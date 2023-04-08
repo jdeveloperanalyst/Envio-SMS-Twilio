@@ -54,6 +54,14 @@ O <kbd>Twilio</kbd> é uma biblioteca auxiliar do Python que facilita a interac�
        client = Client(account_sid, auth_token)
        ```
        _Com isto, é feito a conexão com Twilio para o envio do SMS._
+       
+## Estrutura do código
+
+Mostrando a estrutura do código, irei falar sobre as bibliotecas utilizadas e cada etapa do processo. <kbd>Confira o vídeo abaixo:</kdb> 
+
+
+
+
 <br>
 <h3 align="center">
 Código 100% Funcional
