@@ -57,9 +57,15 @@ O <kbd>Twilio</kbd> é uma biblioteca auxiliar do Python que facilita a interac�
        
 ## Estrutura do código
 
-Mostrando a estrutura do código, irei falar sobre as bibliotecas utilizadas, e cada etapa do processo. <kbd>Confira sobre o link abaixo:</kdb> 
+Mostrando a estrutura do código, irei falar sobre as bibliotecas utilizadas, e cada etapa do processo até a exeução para envio do SMS. <kbd>Confira sobre o link abaixo:</kdb> 
 
-_[Clique aqui](https://drive.google.com/file/d/1tAFkhntNOcD3i3kurQnfe6riJEWmrLSe/view?usp=share_link) para ver o vídeo no Google Drive._
+_[Clique aqui](https://drive.google.com/file/d/1tAFkhntNOcD3i3kurQnfe6riJEWmrLSe/view?usp=share_link) para ver a <kbd>parte 1</kbd> do vídeo no Google Drive._
+
+## Incremento biblioteca Time
+
+Nesta etapa do processo decidi incrementar a biblioteca <kbd>Time</kbd> utilizando o metodo <kbd>Sleep</kbd> com a finalidade de ter um intervalo de tempo entre o envio de um sms e outro, para que não tenha algum conflito de conexão com a aplicação web Twilio na execuçao do script ou algum eventual erro. Além disso, realizei um teste espelhando a tela do meu celular para visualizar em tempo real a chegada do SMS ao executar o script.
+
+_[Clique aqui](https://drive.google.com/file/d/18NeJ-Cbv9SLb4PpDlVp05vf6mtf3qrtR/view?usp=share_link) para ver a <kbd>parte 2</kbd> do vídeo no Google Drive._
 
 
 <br>
