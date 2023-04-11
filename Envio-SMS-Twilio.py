@@ -23,6 +23,6 @@ for month in months:
         sms = client.messages.create(
             to=secret['my_cellphone'],
             from_=secret['twilio_phone'],
-            body=f'No mês de {month}, o vendedor {seller} bateu a meta com {sale} vendas!')
+            body=f'No mês de {month}, o vendedor {seller} bateu a meta com {sale} venda!')
         sleep(2)
         print(sms.sid)
