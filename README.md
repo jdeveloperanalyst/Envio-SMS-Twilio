@@ -57,7 +57,10 @@ O <kbd>Twilio</kbd> é uma biblioteca auxiliar do Python que facilita a interac�
        
 ## Estrutura do código
 
-Mostrando a estrutura do código, irei falar sobre as bibliotecas utilizadas, e cada etapa do processo. <kbd>Confira o vídeo abaixo:</kdb> 
+Mostrando a estrutura do código, irei falar sobre as bibliotecas utilizadas, e cada etapa do processo. <kbd>Confira sobre o link abaixo:</kdb> 
+
+_[Clique aqui](https://drive.google.com/file/d/1tAFkhntNOcD3i3kurQnfe6riJEWmrLSe/view?usp=share_link) para ver o vídeo no Google Drive._
+
 
 <br>
 <h3 align="center">
