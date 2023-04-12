@@ -55,6 +55,8 @@ O <kbd>Twilio</kbd> é uma biblioteca auxiliar do Python que facilita a interac�
        ```
        _Com isto, é feito a conexão com Twilio para o envio do SMS._
        
+_[Clique aqui para acessar a documentação utilizada!](https://www.twilio.com/pt-br/docs/libraries/python)_
+       
 ## Estrutura do Código
 
 Mostrando a estrutura do código, irei falar sobre as bibliotecas utilizadas, e cada etapa do processo até a execução do script para envio do SMS. <kbd>Confira sobre o link abaixo:</kdb> 
